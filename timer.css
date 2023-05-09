@@ -1,0 +1,106 @@
+:root {
+    font-family: 'pretendard', sans-serif;
+
+    --ft-size-h1: 40px;
+    --ft-size-h2: 24px;
+    --ft-size-nm: 14px;
+    --ft-size-sm: 12px;
+
+    --color-start: #5180FF;
+    --color-pause: #15C2B8;
+    --color-reset: #FB7099;
+    --color-disabled: #324577;
+}
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hidden {
+    position: absolute;
+    margin: -1px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+body {
+    position: relative;
+    height: 100vh;
+    background: radial-gradient(96.74% 276.79% at 3.59% 5.28%, #F0F4FF 0%, #A5B6EE 100%) no-repeat;
+}
+
+main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.timer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 400px;
+    height: 360px;
+    background: linear-gradient(144.07deg, #5572BB 2.13%, #374B7C 102.97%);
+    border-radius: 16px;
+    box-shadow: 20px 20px 60px rgba(55, 75, 124, .4);
+}
+
+.time-wrap h2 {
+    padding: 30px;
+    font-size: var(--ft-size-h2);
+    color: white;
+    text-align: center;
+}
+
+.time-wrap .line {
+    margin-bottom: 50px;
+    border-top: 1px solid #3D538A;
+    border-bottom: 1px solid #5B75B4;
+}
+
+.time-wrap input {
+    all: unset;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(314.28deg, #304577 0%, #4C65A0 83%);
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid #354971;
+    font-size: var(--ft-size-h1);
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+.time-wrap span {
+    font-size: var(--ft-size-h1);
+    color: #A5B6EE;
+}
+
+.button-wrap button {
+    all: unset;
+    padding: 0 10px;
+    width: 112px;
+    height: 48px;
+    box-sizing: border-box;
+    border-radius: 50px;
+    background-color: var(--color-disabled);
+    box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.button-wrap .start-btn>img,
+.button-wrap .reset-btn>img {
+    width: 16px;
+    margin-right: 10px;
+    object-position: 0 16px;
+    vertical-align: bottom;
+}

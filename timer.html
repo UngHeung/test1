@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="stylesheet" href="timer.css">
+</head>
+
+<body>
+  <header>
+    <h1><img src="./img/weniv-logo.png" alt="위니브로고"></h1>
+  </header>
+  <main>
+    <article class="timer">
+      <section class="time-wrap">
+        <h2>TIMER</h2>
+        <div class="line"></div>
+
+        <time datetime="">
+          <section class="label">
+            <label for="timer_hours">HRS</label>
+            <label for="timer_minutes">MIN</label>
+            <label for="timer_second">SEC</label>
+          </section>
+          <input type="button" id="timer_hrs" value="00">
+          <span>:</span>
+          <input type="button" id="timer_min" value="00">
+          <span>:</span>
+          <input type="button" id="timer_sec" value="00">
+        </time>
+      </section>
+
+      <section class="button-wrap">
+        <h2 class="hidden">button</h2>
+        <button type="button" class="start-btn"><img src="img/start.svg" alt="타이머시작">START</button>
+        <button type="button" class="reset-btn"><img src="img/reset.svg" alt="타이머리셋">RESET</button>
+      </section>
+    </article>
+  </main>
+  <footer>
+    <p>cp</p>
+  </footer>
+
+  <script src="timer.js"></script>
+</body>
+
+</html>
